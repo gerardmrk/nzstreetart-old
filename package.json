@@ -15,9 +15,22 @@
   "jest": {
     "preset": "jest-react-native"
   },
+  "standard": {
+    "ignore": [
+      "android",
+      "ios"
+    ],
+    "parser": "babel-eslint",
+    "plugins": [
+      "react",
+      "react-native"
+    ]
+  },
   "devDependencies": {
     "babel-jest": "16.0.0",
     "babel-preset-react-native": "1.9.0",
+    "eslint-plugin-react": "^6.5.0",
+    "eslint-plugin-react-native": "^2.0.0",
     "jest": "16.0.2",
     "jest-react-native": "16.1.0",
     "react-test-renderer": "15.3.2"
