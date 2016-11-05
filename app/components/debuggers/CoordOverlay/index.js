@@ -13,10 +13,10 @@ const CoordOverlay = ({
   return (
     <View style={styles.main}>
       <Text style={styles.title}>{title}</Text>
-      <Text>lat: {latitude}</Text>
-      <Text>lon: {longitude}</Text>
-      <Text>latDelta: {latitudeDelta}</Text>
-      <Text>lonDelta: {longitudeDelta}</Text>
+      <Text style={styles.values}>lat: {latitude}</Text>
+      <Text style={styles.values}>lon: {longitude}</Text>
+      <Text style={styles.values}>latDelta: {latitudeDelta}</Text>
+      <Text style={styles.values}>lonDelta: {longitudeDelta}</Text>
     </View>
   )
 }

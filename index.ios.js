@@ -10,7 +10,7 @@ import Profile from './app/containers/Profile'
 
 export default class NzStreetArt extends Component {
   routes = [
-    { title: 'Home', key: 'home', component: Home, initial: true },
+    { title: 'Map', key: 'home', component: Home, initial: true },
     { title: 'Murals', key: 'murals', component: Murals, initial: false },
     { title: 'Profile', key: 'profile', component: Profile, initial: false }
   ]

@@ -11,6 +11,9 @@ export default StyleSheet.create({
     borderBottomColor: '#ddd'
   },
   title: {
-    fontSize: 20
+    fontSize: 18.6
+  },
+  values: {
+    fontSize: 12.4
   }
 })
