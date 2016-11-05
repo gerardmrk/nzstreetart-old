@@ -10,9 +10,9 @@ import Profile from './app/containers/Profile'
 
 export default class NzStreetArt extends Component {
   routes = [
-    { title: 'Map', key: 'home', component: Home, initial: true },
-    { title: 'Murals', key: 'murals', component: Murals, initial: false },
-    { title: 'Profile', key: 'profile', component: Profile, initial: false }
+    { title: 'Map', icon: 'public', key: 'home', component: Home, initial: true },
+    { title: 'Murals', icon: 'map', key: 'murals', component: Murals, initial: false },
+    { title: 'Profile', icon: 'rate-review', key: 'profile', component: Profile, initial: false }
   ]
 
   _handleRouteChange = key => Actions[key]({})
