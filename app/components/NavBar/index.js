@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import { View, Text, TouchableHighlight } from 'react-native'
+import { View, TouchableHighlight } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 
 import styles from './styles'
@@ -24,12 +24,13 @@ NavBar.propTypes = {
 const Nav = ({ nav, onPress }) => {
   const handlePress = () => onPress(nav.key)
   return (
-    <TouchableHighlight
-      onPress={handlePress}
-      style={styles.navWrapper}
-      underlayColor={colors.baseActive}
-    >
-      <Icon name={nav.icon} size={30} color={'#fff'} />
-    </TouchableHighlight>
+    <View style={styles.navWrapper}>
+      <TouchableHighlight
+        onPress={handlePress}
+        underlayColor={colors.baseActive}
+      >
+        <Icon name={nav.icon} size={30} color={'#fff'} />
+      </TouchableHighlight>
+    </View>
   )
 }
