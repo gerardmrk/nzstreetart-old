@@ -3,11 +3,11 @@ import { View, Text } from 'react-native'
 
 import styles from './styles'
 
-export default class Home extends Component {
+export default class MuralList extends Component {
   render () {
     return (
       <View style={styles.main}>
-        <Text>{'HOME'}</Text>
+        <Text>{'MURAL LIST PAGE'}</Text>
       </View>
     )
   }
