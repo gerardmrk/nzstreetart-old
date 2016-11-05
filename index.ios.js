@@ -9,14 +9,14 @@ import Home from './app/containers/Home'
 export default class NzStreetArt extends Component {
   render () {
     const routes = [
-      { title: 'First Scene', index: 0 },
-      { title: 'Second Scene', index: 1 },
-      { title: 'Third Scene', index: 2 }
+      { title: 'Home', index: 0 },
+      { title: 'List', index: 1 },
+      { title: 'User', index: 2 }
     ]
     return (
       <View style={styles.container}>
         <Header />
-        <NavBar />
+        <NavBar navs={routes} />
       </View>
     )
   }
