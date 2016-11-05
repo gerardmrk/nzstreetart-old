@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { AppRegistry, Navigator, View, Text, TouchableHighlight } from 'react-native'
+import { AppRegistry, Navigator, View } from 'react-native'
 
 import styles from './styles.index'
 import Header from './app/components/Header'
@@ -16,7 +16,19 @@ export default class NzStreetArt extends Component {
     return (
       <View style={styles.container}>
         <Header />
-        <NavBar navs={routes} />
+        <Navigator
+          initialRoute={routes[0]}
+          initialRouteStack={routes}
+          renderScene={(route, nav) => {
+            const changeRoute = index => nav.push(index)
+            return (
+              <View>
+                <NavBar navs={routes} handleRouteChange={changeRoute} />
+              </View>
+            )
+          }}
+        />
+
       </View>
     )
   }
