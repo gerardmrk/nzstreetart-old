@@ -1,6 +1,6 @@
 export default {
-  base: '#c0392b',
-  baseActive: '#c0392b',
+  base: '#2c3e50',
+  baseActive: '#2c3e50',
   baseText: '#767676',
   headerText: '#fff'
 }

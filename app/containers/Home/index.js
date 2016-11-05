@@ -1,22 +1,23 @@
 import React, { Component } from 'react'
-import { View, Text } from 'react-native'
+import { View } from 'react-native'
 import MapView from 'react-native-maps'
 
 import styles from './styles'
+import CoordOverlay from '../../components/debuggers/CoordOverlay'
 
 export default class Home extends Component {
   state = {
     position: {
-      latitude: -41.2908301,
-      longitude: 174.7812038,
+      latitude: 37.785834,
+      longitude: -122.406417,
       latitudeDelta: 0.00004508521359580864,
       longitudeDelta: 0.000044915558749550845
     },
     region: {
       latitude: -41.2908301,
       longitude: 174.7812038,
-      latitudeDelta: 0.001,
-      longitudeDelta: 0.001
+      latitudeDelta: 0.01,
+      longitudeDelta: 0.01
     }
   }
 
@@ -40,13 +41,11 @@ export default class Home extends Component {
   componentWillUnmount () { window.navigator.geolocation.clearWatch(this['watchID']) }
 
   _handleRegionChange = region => {
-    console.log(region)
     this.setState({ region, position: region })
   }
 
   render () {
     const { position, region } = this.state
-    const { longitude, latitude } = position
     return (
       <View style={styles.main}>
         <MapView
@@ -55,13 +54,17 @@ export default class Home extends Component {
           onRegionChange={this._handleRegionChange}
         >
           <MapView.Marker
-            coordinate={{ latitude, longitude }}
+            coordinate={{
+              latitude: position.latitude,
+              longitude: position.longitude
+            }}
             title={'YOU'}
             description={'Your current location'}
           />
         </MapView>
         <View style={styles.coordsOverlay}>
-          <Text>{'weee'}</Text>
+          <CoordOverlay title={'user'} {...position} />
+          <CoordOverlay title={'region'} {...region} />
         </View>
       </View>
     )

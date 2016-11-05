@@ -14,6 +14,9 @@ export default class NzStreetArt extends Component {
     { title: 'Murals', key: 'murals', component: Murals, initial: false },
     { title: 'Profile', key: 'profile', component: Profile, initial: false }
   ]
+
+  _handleRouteChange = key => Actions[key]({})
+
   render () {
     return (
       <View style={styles.container}>
@@ -24,17 +27,10 @@ export default class NzStreetArt extends Component {
             leftButtonTextStyle={styles.headerBackNav}
             navigationBarStyle={styles.headerBar}
           >
-            {this.routes.map((r, i) => (
-              <Scene
-                key={r.key}
-                title={r.title}
-                initial={r.initial}
-                component={r.component}
-              />
-            ))}
+            {this.routes.map((r, i) => <Scene key={r.key} {...r} />)}
           </Scene>
         </Router>
-        <NavBar navs={this.routes} handleRouteChange={key => Actions[key]({})} />
+        <NavBar navs={this.routes} handleRouteChange={this._handleRouteChange} />
       </View>
     )
   }

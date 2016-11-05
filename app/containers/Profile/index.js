@@ -8,11 +8,6 @@ export default class Profile extends Component {
     return (
       <View style={styles.main}>
         <Text>{'PROFILE PAGE'}</Text>
-        <Text>{'PROFILE PAGE'}</Text>
-        <Text>{'PROFILE PAGE'}</Text>
-        <Text>{'PROFILE PAGE'}</Text>
-        <Text>{'PROFILE PAGE'}</Text>
-        <Text>{'PROFILE PAGE'}</Text>
       </View>
     )
   }
