@@ -1,30 +1,23 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react'
-import {
-  AppRegistry,
-  View
-} from 'react-native'
+import { AppRegistry, Navigator, View, Text } from 'react-native'
 import MapView from 'react-native-maps'
+
 import styles from './styles.index'
+import Header from './components/Header'
 
 export default class NzStreetArt extends Component {
   state = {
     position: {
-      latitude: 37.785834,
-      longitude: -122.406417,
+      latitude: -41.2908301,
+      longitude: 174.7812038,
       latitudeDelta: 0.00004508521359580864,
       longitudeDelta: 0.000044915558749550845
     },
     region: {
-      latitude: 37.785834,
-      longitude: -122.406417,
-      latitudeDelta: 0.00004508521359580864,
-      longitudeDelta: 0.000044915558749550845
+      latitude: -41.2908301,
+      longitude: 174.7812038,
+      latitudeDelta: 0.001,
+      longitudeDelta: 0.001
     }
   }
 
@@ -48,13 +41,13 @@ export default class NzStreetArt extends Component {
   componentWillUnmount () { window.navigator.geolocation.clearWatch(this['watchID']) }
 
   _handleRegionChange = region => {
+    console.log(region)
     this.setState({ region, position: region })
   }
 
   render () {
     const { position, region } = this.state
     const { longitude, latitude } = position
-    console.log(position)
     return (
       <View style={styles.container}>
         <MapView
@@ -68,6 +61,10 @@ export default class NzStreetArt extends Component {
             description={'Your current location'}
           />
         </MapView>
+        <Header />
+        <View style={styles.coordsOverlay}>
+          <Text>{'weee'}</Text>
+        </View>
       </View>
     )
   }
