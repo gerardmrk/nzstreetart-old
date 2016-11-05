@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { View, Text } from 'react-native'
 
 import styles from './styles'
 
-export default class Header extends Component {
-  render () {
-    return (
-      <View style={styles.main}>
-        <Text>{'Header'}</Text>
-      </View>
-    )
-  }
+const Header = ({ title }) => {
+  return (
+    <View style={styles.main}>
+      <Text style={styles.title}>{title}</Text>
+    </View>
+  )
 }
+
+export default Header

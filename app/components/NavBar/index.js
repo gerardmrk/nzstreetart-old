@@ -21,7 +21,7 @@ NavBar.propTypes = {
 }
 
 const Nav = ({ nav, onPress }) => {
-  const handlePress = () => onPress(nav.index)
+  const handlePress = () => onPress(nav.key)
   return (
     <TouchableHighlight
       onPress={handlePress}

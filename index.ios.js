@@ -1,34 +1,40 @@
 import React, { Component } from 'react'
-import { AppRegistry, Navigator, View } from 'react-native'
+import { AppRegistry, View } from 'react-native'
+import { Scene, Router, Actions } from 'react-native-router-flux'
 
 import styles from './styles.index'
-import Header from './app/components/Header'
 import NavBar from './app/components/NavBar'
 import Home from './app/containers/Home'
+import Murals from './app/containers/Murals'
+import Profile from './app/containers/Profile'
 
 export default class NzStreetArt extends Component {
+  routes = [
+    { title: 'Home', key: 'home', component: Home, initial: true },
+    { title: 'Murals', key: 'murals', component: Murals, initial: false },
+    { title: 'Profile', key: 'profile', component: Profile, initial: false }
+  ]
   render () {
-    const routes = [
-      { title: 'Home', index: 0 },
-      { title: 'List', index: 1 },
-      { title: 'User', index: 2 }
-    ]
     return (
       <View style={styles.container}>
-        <Header />
-        <Navigator
-          initialRoute={routes[0]}
-          initialRouteStack={routes}
-          renderScene={(route, nav) => {
-            const changeRoute = index => nav.push(index)
-            return (
-              <View>
-                <NavBar navs={routes} handleRouteChange={changeRoute} />
-              </View>
-            )
-          }}
-        />
-
+        <Router>
+          <Scene
+            key={'root'}
+            titleStyle={styles.headerTitle}
+            leftButtonTextStyle={styles.headerBackNav}
+            navigationBarStyle={styles.headerBar}
+          >
+            {this.routes.map((r, i) => (
+              <Scene
+                key={r.key}
+                title={r.title}
+                initial={r.initial}
+                component={r.component}
+              />
+            ))}
+          </Scene>
+        </Router>
+        <NavBar navs={this.routes} handleRouteChange={key => Actions[key]({})} />
       </View>
     )
   }

@@ -1,5 +1,7 @@
 import { StyleSheet } from 'react-native'
 
+import colors from './app/_styles/colors'
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -8,10 +10,17 @@ const styles = StyleSheet.create({
     alignItems: 'stretch',
     backgroundColor: '#F5FCFF'
   },
+  headerBar: {
+    backgroundColor: colors.base
+  },
+  headerTitle: {
+    color: colors.headerText
+  },
+  headerBackNav: {
+    color: colors.headerText
+  },
   mapContainer: {
     ...StyleSheet.absoluteFillObject
-  },
-  coordsOverlay: {
   }
 })
 
