@@ -26,6 +26,7 @@ class Murals extends Component {
     return (
       <View style={styles.main}>
         <ListView
+          enableEmptySections
           dataSource={this.state.dataSource}
           renderRow={rowData => <MuralPreview {...rowData} />}
         />

@@ -18,10 +18,6 @@ class App extends Component {
     { title: 'Profile', icon: 'rate-review', key: 'profile', component: Profile, initial: false }
   ]
 
-  state = {
-    muralList: []
-  }
-
   _handleRouteChange = key => Actions[key]({})
 
   render () {
@@ -31,8 +27,8 @@ class App extends Component {
           <Scene
             key={'root'}
             titleStyle={styles.headerTitle}
-            leftButtonTextStyle={styles.headerBackNav}
             navigationBarStyle={styles.headerBar}
+            backButtonImage={require('../assets/back_button.png')}
           >
             {this.routes.map((r, i) => <Scene key={r.key} {...r} />)}
           </Scene>

@@ -11,7 +11,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF'
   },
   headerBar: {
-    backgroundColor: colors.base
+    backgroundColor: colors.base,
+    borderBottomWidth: 1,
+    borderBottomColor: colors.base
   },
   headerTitle: {
     color: colors.headerText

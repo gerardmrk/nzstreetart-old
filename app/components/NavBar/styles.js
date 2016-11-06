@@ -6,7 +6,9 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'stretch',
     backgroundColor: colors.base,
-    height: 40
+    borderTopWidth: 1,
+    borderTopColor: '#82B4B0',
+    height: 48.8
   },
   navWrapper: {
     flexGrow: 1,

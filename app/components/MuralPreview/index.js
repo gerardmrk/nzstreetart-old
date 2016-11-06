@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, TouchableHighlight } from 'react-native'
 
 import styles from './styles'
 
@@ -16,10 +16,16 @@ const MuralPreview = ({
   thumb_url
 }) => {
   return (
-    <View style={styles.main}>
-      <Image source={{uri: thumb_url}} style={styles.thumbnail} />
-      <View style={styles.contentBody}><Text>{mural_name}</Text></View>
-    </View>
+    <TouchableHighlight onPress={() => {}}>
+      <View style={styles.main}>
+        <Image source={{uri: thumb_url}} style={styles.thumbnail} />
+        <View style={styles.contentBody}>
+          <Text>{mural_name || ''}</Text>
+          <Text>{artist_name || ''}</Text>
+          <Text>{artist_crew || ''}</Text>
+        </View>
+      </View>
+    </TouchableHighlight>
   )
 }
 

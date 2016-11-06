@@ -29,7 +29,7 @@ const Nav = ({ nav, onPress }) => {
         onPress={handlePress}
         underlayColor={colors.baseActive}
       >
-        <Icon name={nav.icon} size={30} color={'#fff'} />
+        <Icon name={nav.icon} size={30} color={colors.headerText} />
       </TouchableHighlight>
     </View>
   )

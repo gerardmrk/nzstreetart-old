@@ -1,4 +1,4 @@
-import firebaseapi from './firebaseapi'
+import firebaseapi from '../_apis/firebaseapi'
 
 const db = firebaseapi.database()
 const gs = firebaseapi.storage()

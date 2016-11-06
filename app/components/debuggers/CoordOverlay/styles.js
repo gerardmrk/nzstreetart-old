@@ -7,8 +7,8 @@ export default StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'space-around',
     alignItems: 'center',
-    borderBottomWidth: 2,
-    borderBottomColor: '#ddd'
+    borderTopWidth: 1,
+    borderTopColor: '#ddd'
   },
   title: {
     fontSize: 18.6

@@ -67,7 +67,6 @@ class Home extends Component {
           />
         </MapView>
         <View style={styles.coordsOverlay}>
-          <CoordOverlay title={'user'} {...position} />
           <CoordOverlay title={'region'} {...region} />
         </View>
       </View>

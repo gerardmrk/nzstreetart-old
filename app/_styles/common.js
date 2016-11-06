@@ -1,3 +1,3 @@
 export default {
-  headerPadding: 63.2
+  headerPadding: 63
 }
