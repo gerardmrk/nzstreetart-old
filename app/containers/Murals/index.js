@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import { View, ListView } from 'react-native'
 
 import styles from './styles'
@@ -40,8 +40,4 @@ export default class Murals extends Component {
       </View>
     )
   }
-}
-
-Murals.propTypes = {
-  api: PropTypes.object.isRequired
 }
