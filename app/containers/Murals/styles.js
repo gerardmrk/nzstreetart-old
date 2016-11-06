@@ -3,7 +3,7 @@ import common from '../../_styles/common'
 
 export default StyleSheet.create({
   main: {
-    backgroundColor: 'crimson',
-    paddingTop: common.headerPadding
+    paddingTop: common.headerPadding,
+    flex: 1
   }
 })
