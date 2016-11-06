@@ -1,43 +1,65 @@
-import React, { Component } from 'react'
-import { View, ListView } from 'react-native'
+import React, { Component, PropTypes } from 'react'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import { View, ListView, Text } from 'react-native'
 
+import * as actionCreators from '../../actions'
 import styles from './styles'
 import MuralPreview from '../../components/MuralPreview'
 
-export default class Murals extends Component {
+class Murals extends Component {
   state = {
     dataSource: new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
   }
 
   componentDidMount () {
-    // const { api } = this.props
-    // const db = api.database()
-    // const gs = api.storage()
-    // gs.ref('murals/thumbnails').getDownloadURL().then(url => {
-    //   db.ref('/murals').once('value').then(snapshot => {
-    //     let items = []
-    //     snapshot.forEach(child => {
-    //       const childprops = child.val()
-    //       items.push({
-    //         _key: child.key,
-    //         thumb_url: `${url}/${childprops.mural_thumb}`,
-    //         ...childprops
-    //       })
-    //     })
-    //     this.setState({ dataSource: this.state.dataSource.cloneWithRows(items) })
-    //   })
-    // })
+    this.props.getMuralList()
+  }
+
+  componentWillReceiveProps (nextProps) {
+    this.setState({
+      dataSource: this.state.dataSource.cloneWithRows(nextProps.items)
+    })
   }
 
   render () {
-    return (
-      <View style={styles.main}>
-        <ListView
-          pageSize={4}
-          dataSource={this.state.dataSource}
-          renderRow={rowData => <MuralPreview {...rowData} />}
-        />
-      </View>
-    )
+    if (this.props.isLoadingMurals) {
+      return (
+        <View style={styles.main}>
+          <Text>{'LOADING'}</Text>
+          <Text>{'LOADING'}</Text>
+          <Text>{'LOADING'}</Text>
+          <Text>{'LOADING'}</Text>
+        </View>
+      )
+    } else {
+      return (
+        <View style={styles.main}>
+          <ListView
+            pageSize={4}
+            dataSource={this.state.dataSource}
+            renderRow={rowData => <MuralPreview {...rowData} />}
+          />
+        </View>
+      )
+    }
   }
 }
+
+Murals.propTypes = {
+  getMuralList: PropTypes.func.isRequired,
+  items: PropTypes.array.isRequired,
+  isLoadingMurals: PropTypes.bool.isRequired
+}
+
+const mapStateToProps = state => {
+  const { isLoadingMurals, items } = state.murals
+  return {
+    isLoadingMurals,
+    items
+  }
+}
+
+const mapDispatchToProps = dispatch => bindActionCreators(actionCreators, dispatch)
+
+export default connect(mapStateToProps, mapDispatchToProps)(Murals)

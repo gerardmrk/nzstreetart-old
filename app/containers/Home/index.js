@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 import { View } from 'react-native'
 import MapView from 'react-native-maps'
 
+import * as actionCreators from '../../actions'
 import styles from './styles'
 import CoordOverlay from '../../components/debuggers/CoordOverlay'
 
-export default class Home extends Component {
+class Home extends Component {
   state = {
     position: {
       latitude: 37.785834,
@@ -87,3 +90,9 @@ const regionFrom = ({ coords }) => {
     longitudeDelta: Math.max(0, lonDelta)
   }
 }
+
+const mapStateToProps = state => ({})
+
+const mapDispatchToProps = dispatch => bindActionCreators(actionCreators, dispatch)
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home)
