@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native'
 
 import styles from './styles'
 
@@ -17,7 +17,8 @@ const MuralPreview = ({
 }) => {
   return (
     <View style={styles.main}>
-      <View><Text>{mural_name}</Text></View>
+      <Image source={{uri: thumb_url}} style={styles.thumbnail} />
+      <View style={styles.contentBody}><Text>{mural_name}</Text></View>
     </View>
   )
 }

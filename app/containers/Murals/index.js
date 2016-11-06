@@ -23,26 +23,14 @@ class Murals extends Component {
   }
 
   render () {
-    if (this.props.isLoadingMurals) {
-      return (
-        <View style={styles.main}>
-          <Text>{'LOADING'}</Text>
-          <Text>{'LOADING'}</Text>
-          <Text>{'LOADING'}</Text>
-          <Text>{'LOADING'}</Text>
-        </View>
-      )
-    } else {
-      return (
-        <View style={styles.main}>
-          <ListView
-            pageSize={4}
-            dataSource={this.state.dataSource}
-            renderRow={rowData => <MuralPreview {...rowData} />}
-          />
-        </View>
-      )
-    }
+    return (
+      <View style={styles.main}>
+        <ListView
+          dataSource={this.state.dataSource}
+          renderRow={rowData => <MuralPreview {...rowData} />}
+        />
+      </View>
+    )
   }
 }
 

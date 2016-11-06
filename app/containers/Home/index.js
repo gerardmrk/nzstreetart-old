@@ -52,6 +52,7 @@ class Home extends Component {
     return (
       <View style={styles.main}>
         <MapView
+          loadingEnabled
           style={styles.mapContainer}
           initialRegion={region}
           onRegionChange={this._handleRegionChange}

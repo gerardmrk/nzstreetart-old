@@ -4,8 +4,9 @@ export default StyleSheet.create({
   main: {
     flex: 1,
     flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'stretch'
+    alignItems: 'stretch',
+    borderBottomWidth: 1,
+    borderBottomColor: '#ddd'
   },
   thumbnail: {
     width: 100,
@@ -13,6 +14,7 @@ export default StyleSheet.create({
   },
   contentBody: {
     flexGrow: 2,
-    backgroundColor: '#f7f7f7'
+    backgroundColor: '#f7f7f7',
+    padding: 8
   }
 })
