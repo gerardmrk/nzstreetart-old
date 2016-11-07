@@ -5,15 +5,21 @@ const styles = StyleSheet.create({
   main: {
     flex: 1,
     flexDirection: 'column',
-    justifyContent: 'flex-end',
+    justifyContent: 'space-between',
     alignItems: 'stretch',
     backgroundColor: '#F5FCFF',
     paddingTop: common.headerPadding
   },
-  mapContainer: {
-    ...StyleSheet.absoluteFillObject
+  imageContainer: {
+    height: 370,
+    // backgroundColor: '#212121',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
-  coordsOverlay: {
+  pic: {
+    width: 320,
+    height: 320,
+    borderRadius: 3
   }
 })
 

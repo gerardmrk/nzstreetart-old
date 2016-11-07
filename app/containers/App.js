@@ -10,12 +10,20 @@ import NavBar from '../components/NavBar'
 import Home from './Home'
 import Murals from './Murals'
 import Profile from './Profile'
+import Mural from './Mural'
 
 class App extends Component {
   routes = [
-    { title: 'Map', icon: 'public', key: 'home', component: Home, initial: true },
-    { title: 'Murals', icon: 'map', key: 'murals', component: Murals, initial: false },
-    { title: 'Profile', icon: 'rate-review', key: 'profile', component: Profile, initial: false }
+    { title: 'Map', key: 'home', component: Home, initial: true },
+    { title: 'Murals', key: 'murals', component: Murals, initial: false },
+    { title: 'Profile', key: 'profile', component: Profile, initial: false },
+    { title: 'Mural', key: 'mural', component: Mural, initial: false }
+  ]
+
+  navs = [
+    { icon: 'public', key: 'home' },
+    { icon: 'map', key: 'murals' },
+    { icon: 'rate-review', key: 'profile' }
   ]
 
   _handleRouteChange = key => Actions[key]({})
@@ -33,7 +41,7 @@ class App extends Component {
             {this.routes.map((r, i) => <Scene key={r.key} {...r} />)}
           </Scene>
         </Router>
-        <NavBar navs={this.routes} handleRouteChange={this._handleRouteChange} />
+        <NavBar navs={this.navs} handleRouteChange={this._handleRouteChange} />
       </View>
     )
   }

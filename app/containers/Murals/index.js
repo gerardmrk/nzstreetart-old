@@ -1,7 +1,8 @@
 import React, { Component, PropTypes } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { View, ListView, Text } from 'react-native'
+import { View, ListView } from 'react-native'
+import { Actions } from 'react-native-router-flux'
 
 import * as actionCreators from '../../actions'
 import styles from './styles'
@@ -22,13 +23,25 @@ class Murals extends Component {
     })
   }
 
+  _handlePreviewClick = index => { Actions['mural']({ index }) }
+
+  _renderPreview = (rowData, sectionID, rowID) => {
+    return (
+      <MuralPreview
+        {...rowData}
+        index={rowID}
+        handlePreviewClick={this._handlePreviewClick}
+      />
+    )
+  }
+
   render () {
     return (
       <View style={styles.main}>
         <ListView
           enableEmptySections
           dataSource={this.state.dataSource}
-          renderRow={rowData => <MuralPreview {...rowData} />}
+          renderRow={this._renderPreview}
         />
       </View>
     )
@@ -38,7 +51,8 @@ class Murals extends Component {
 Murals.propTypes = {
   getMuralList: PropTypes.func.isRequired,
   items: PropTypes.array.isRequired,
-  isLoadingMurals: PropTypes.bool.isRequired
+  isLoadingMurals: PropTypes.bool.isRequired,
+  setCurrentMural: PropTypes.func
 }
 
 const mapStateToProps = state => {
