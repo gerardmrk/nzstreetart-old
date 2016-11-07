@@ -12,9 +12,13 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     height: 370,
-    // backgroundColor: '#212121',
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  imageWrapper: {
+    position: 'relative',
+    width: 320,
+    height: 320
   },
   pic: {
     width: 320,

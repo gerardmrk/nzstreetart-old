@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, Animated } from 'react-native'
 
 import * as actionCreators from '../../actions'
 import firebaseapi from '../../_apis/firebaseapi'
@@ -14,7 +14,7 @@ class Mural extends Component {
     super(props)
     this.state = {
       isFetchingPic: true,
-      picUrl: ''
+      picOpacity: new Animated.Value(0)
     }
   }
 
@@ -24,17 +24,36 @@ class Mural extends Component {
     .then(() => this.setState({ isFetchingPic: false }))
   }
 
+  _onLoad = () => {
+    Animated.timing(this.state.picOpacity, { toValue: 0, duration: 250 }).start()
+  }
+
+  _onPicLoad = () => {
+    Animated.timing(this.state.picOpacity, { toValue: 1, duration: 250 }).start()
+  }
+
   render () {
-    const { artist_name, mural_blob } = this.props.mural
-    const { isFetchingPic, picUrl } = this.state
-    console.log(this.props.index, picUrl)
+    const { artist_name, mural_blob, _key } = this.props.mural
+    const { picUrl, picOpacity } = this.state
     return (
       <View style={styles.main}>
         <View style={styles.imageContainer}>
-          {isFetchingPic
-            ? <Image source={{uri: mural_blob}} style={styles.pic} />
-            : <Image source={{uri: picUrl}} style={styles.pic} />
-          }
+          <View style={styles.imageWrapper}>
+            <Animated.Image
+              resizeMode={'contain'}
+              key={_key}
+              style={[{ position: 'absolute' }, styles.pic]}
+              source={{uri: mural_blob}}
+              onLoad={this._onLoad}
+            />
+            <Animated.Image
+              resizeMode={'contain'}
+              key={`${_key}1`}
+              style={[{ opacity: picOpacity }, styles.pic]}
+              source={{uri: picUrl}}
+              onLoad={this._onPicLoad}
+            />
+          </View>
         </View>
         <Text>{artist_name}</Text>
       </View>
