@@ -9,12 +9,17 @@ export default StyleSheet.create({
     borderBottomColor: '#ddd'
   },
   thumbnail: {
-    width: 100,
-    height: 100
+    width: 90,
+    height: 90
+  },
+  placeholderThumb: {
+    width: 90,
+    height: 90,
+    backgroundColor: '#777777'
   },
   contentBody: {
     flexGrow: 2,
     backgroundColor: '#f7f7f7',
-    padding: 8
+    padding: 7
   }
 })

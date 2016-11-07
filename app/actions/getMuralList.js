@@ -20,9 +20,7 @@ const getMuralList = (sortOrder = 'default') => async dispatch => {
       items.push({ _key: child.key, ...childprops })
     })
 
-    const parsedItems = await Promise.all(items.map(i => getthumburl(i)))
-
-    dispatch(_getMuralListSuccess(parsedItems))
+    dispatch(_getMuralListSuccess(items))
   } catch (err) {
     console.error(err)
     dispatch(_getMuralListFailure(err))
