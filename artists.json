@@ -1,0 +1,563 @@
+{
+  "Adam Starnes" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : false,
+      "twitter" : false
+    }
+  },
+  "Adnate" : {
+    "crews" : {
+      "AWOL" : true
+    },
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : "https://www.instagram.com/adnate/",
+      "main" : "http://www.adnate.com.au",
+      "twitter" : false
+    }
+  },
+  "Andrew J Steel" : {
+    "crews" : {
+      "BMD" : true
+    },
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : "https://www.instagram.com/andrewj.steel/",
+      "main" : "http://andrewjsteel.com/",
+      "twitter" : false
+    }
+  },
+  "Anthony Lister" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : "https://www.instagram.com/anthonylister/",
+      "main" : "https://anthonylister.com/web/",
+      "twitter" : "https://twitter.com/anthonylister"
+    }
+  },
+  "Ash Keating" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/ashkeatingartist/",
+      "instagram" : "https://www.instagram.com/ash_keating/",
+      "main" : false,
+      "twitter" : "https://twitter.com/ash_keating"
+    }
+  },
+  "Askew One" : {
+    "crews" : {
+      "TMD" : true
+    },
+    "desc" : "Self-taught, Askew is a talented and worldly artist whose work transcends the world of murals and street art.",
+    "links" : {
+      "facebook" : "https://www.facebook.com/askewonetmd/",
+      "instagram" : "https://www.instagram.com/askewone/",
+      "main" : "http://www.askew1.com/",
+      "twitter" : "https://twitter.com/askewone"
+    }
+  },
+  "Beastman" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/beastmanart/",
+      "instagram" : "https://www.instagram.com/bradeastman/",
+      "main" : "http://www.beastman.com.au/",
+      "twitter" : "https://twitter.com/bradeastman"
+    }
+  },
+  "Benjamin Work" : {
+    "crews" : {
+      "TMD" : false
+    },
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : "https://www.instagram.com/benjaminwork/",
+      "main" : "http://benjaminwork.tumblr.com/",
+      "twitter" : false
+    }
+  },
+  "Berst" : {
+    "crews" : {
+      "GBAK" : true,
+      "TMD" : true
+    },
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : "https://www.instagram.com/berst_1/",
+      "main" : false,
+      "twitter" : false
+    }
+  },
+  "Buff Monster" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/buffmonster",
+      "instagram" : "https://www.instagram.com/buffmonster/",
+      "main" : "http://buffmonster.com/",
+      "twitter" : "https://twitter.com/buffmonster"
+    }
+  },
+  "Daek William" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : "https://www.instagram.com/daekwilliam/",
+      "main" : "http://daekwilliam.com/",
+      "twitter" : false
+    }
+  },
+  "Dcypher" : {
+    "crews" : {
+      "CBS" : true,
+      "DTR" : true
+    },
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/dcypherart",
+      "instagram" : "https://www.instagram.com/dcypher_dtrcbs/",
+      "main" : "http://www.dcypherart.com/",
+      "twitter" : false
+    }
+  },
+  "Deow" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/1DEOW/",
+      "instagram" : false,
+      "main" : "http://deow.co.nz/",
+      "twitter" : "https://twitter.com/deows"
+    }
+  },
+  "Dream It" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : false,
+      "twitter" : false
+    }
+  },
+  "Dside" : {
+    "crews" : {
+      "BMD" : true
+    },
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/Dside.co.nz",
+      "instagram" : "https://www.instagram.com/_dside/",
+      "main" : "http://dside.co.nz/",
+      "twitter" : false
+    }
+  },
+  "Elliot Francis Stewart" : {
+    "crews" : {
+      "RFC" : true,
+      "TMD" : true
+    },
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/elliotfrancisstewart/",
+      "instagram" : "https://www.instagram.com/elliotfrancisstewart/",
+      "main" : "http://lilelz.com/",
+      "twitter" : false
+    }
+  },
+  "Ezra One" : {
+    "crews" : {
+      "DTK" : true
+    },
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/Ezra-One-164410820252259/",
+      "instagram" : "https://www.instagram.com/ezra_one/",
+      "main" : "http://www.ezraone.com/",
+      "twitter" : "https://twitter.com/ezra_one"
+    }
+  },
+  "Flox" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/floxnz",
+      "instagram" : "https://www.instagram.com/floxnz/",
+      "main" : "http://flox.co.nz/",
+      "twitter" : false
+    }
+  },
+  "Fraser Childs" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : false,
+      "twitter" : false
+    }
+  },
+  "Gary Silipa" : {
+    "crews" : {
+      "TMD" : true
+    },
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : "https://www.instagram.com/tgtb/",
+      "main" : "http://thegoodthebad.co.nz/",
+      "twitter" : false
+    }
+  },
+  "Grace Fairhurst" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : false,
+      "twitter" : false
+    }
+  },
+  "Hazo" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/HAZO-382453221932589/",
+      "instagram" : false,
+      "main" : false,
+      "twitter" : false
+    }
+  },
+  "Holly Ross" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : "http://www.wegotsunshine.com/",
+      "twitter" : false
+    }
+  },
+  "Ikarus" : {
+    "crews" : {
+      "DTR" : true
+    },
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/IkarusDtRcrew/",
+      "instagram" : false,
+      "main" : false,
+      "twitter" : false
+    }
+  },
+  "Jacob Yikes" : {
+    "crews" : {
+      "DTR" : true,
+      "FAT" : true
+    },
+    "desc" : "Jacob Yikes is one of the main street artists in Christchurch. You can find his quirky characters all over town.",
+    "links" : {
+      "facebook" : "https://www.facebook.com/jacobyikes.artist/",
+      "instagram" : "https://www.instagram.com/jacobyikes/",
+      "main" : "http://www.planetyikes.com/",
+      "twitter" : false
+    }
+  },
+  "Jorge Rodriguez-Gerada" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/JorgeRodriguezGerada/",
+      "instagram" : "https://www.instagram.com/jorge_rodriguez_gerada/",
+      "main" : "http://www.jorgerodriguezgerada.com/",
+      "twitter" : "https://twitter.com/rodriguezgerada"
+    }
+  },
+  "Kay Rosen" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : "http://www.kayrosen.com/",
+      "twitter" : false
+    }
+  },
+  "Leeya Warrander" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : false,
+      "twitter" : false
+    }
+  },
+  "Mark Henare" : {
+    "crews" : {
+      "TMD" : true
+    },
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : "https://www.instagram.com/mark_tmd/",
+      "main" : false,
+      "twitter" : "https://twitter.com/dskyestmd"
+    }
+  },
+  "Misery" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/FriendsOfMiseryNZ/",
+      "instagram" : "https://www.instagram.com/miseryland/",
+      "main" : "http://misery.com",
+      "twitter" : false
+    }
+  },
+  "Numskull" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/funskull/",
+      "instagram" : "https://www.instagram.com/funskull/",
+      "main" : "http://www.funskull.com/",
+      "twitter" : false
+    }
+  },
+  "Olivia Laita" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : "https://www.instagram.com/olivialaita/",
+      "main" : false,
+      "twitter" : false
+    }
+  },
+  "Owen Dippie" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/Owen-dippie-465449423527860/",
+      "instagram" : "https://www.instagram.com/owendippie/",
+      "main" : "http://www.owendippie.com/",
+      "twitter" : "https://twitter.com/owendippie"
+    }
+  },
+  "Phat1" : {
+    "crews" : {
+      "TMD" : true
+    },
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/CharlesJanineWilliams/",
+      "instagram" : "https://www.instagram.com/charlestmd/",
+      "main" : "http://www.charlesjaninewilliams.com/",
+      "twitter" : false
+    }
+  },
+  "Richard \"Pops\" Baker" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : false,
+      "twitter" : false
+    }
+  },
+  "Richard Van Der Berg" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : false,
+      "twitter" : false
+    }
+  },
+  "Roa" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/ROAStreetArt/",
+      "instagram" : false,
+      "main" : "http://roaweb.tumblr.com/",
+      "twitter" : false
+    }
+  },
+  "Rob Hood" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : false,
+      "twitter" : false
+    }
+  },
+  "Rone" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : "https://www.instagram.com/r_o_n_e/",
+      "main" : "http://r-o-n-e.com/",
+      "twitter" : false
+    }
+  },
+  "SCAPE Public Art" : {
+    "crews" : false,
+    "desc" : "SCAPE Public Art installs public art in Christchurch all year round with a focus on the Annual Seasons.",
+    "links" : {
+      "facebook" : "https://www.facebook.com/SCAPEPublicArt/",
+      "instagram" : "https://www.instagram.com/scapepublicart/",
+      "main" : "http://www.scapepublicart.org.nz/",
+      "twitter" : "https://twitter.com/scape_nz"
+    }
+  },
+  "Seb Humphreys" : {
+    "crews" : {
+      "Order 55" : true
+    },
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/order55/",
+      "instagram" : "https://www.instagram.com/order55/",
+      "main" : "http://www.sebhumphreys.com/",
+      "twitter" : false
+    }
+  },
+  "Seth" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/globe.painter",
+      "instagram" : "https://www.instagram.com/seth_globepainter/",
+      "main" : false,
+      "twitter" : false
+    }
+  },
+  "Smeagol" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : false,
+      "twitter" : false
+    }
+  },
+  "Sofles" : {
+    "crews" : {
+      "DTS" : true,
+      "TMD" : true
+    },
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/Sofles-589346427802812/",
+      "instagram" : "https://www.instagram.com/sofles/",
+      "main" : "http://www.sofles.com/",
+      "twitter" : false
+    }
+  },
+  "Telmo Miel" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/TelmoMiel/",
+      "instagram" : "https://www.instagram.com/telmomiel/",
+      "main" : "http://www.telmomiel.com/",
+      "twitter" : "https://twitter.com/telmomiel"
+    }
+  },
+  "Tess Sheerin" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/tess.sheerin.art",
+      "instagram" : "https://www.instagram.com/tess.sheerin/",
+      "main" : "http://tesssheerin.com/",
+      "twitter" : "https://twitter.com/tessartist"
+    }
+  },
+  "Tilt" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/Graffitilt/",
+      "instagram" : false,
+      "main" : "http://www.graffitilt.com/",
+      "twitter" : false
+    }
+  },
+  "Tony Fomison" : {
+    "crews" : false,
+    "desc" : "Tony Fomison (1939 - 1990) was a notable artist in New Zealand. He was an important post-war visual artist in the country.",
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : "https://en.wikipedia.org/wiki/Tony_Fomison",
+      "twitter" : false
+    }
+  },
+  "Vans the Omega" : {
+    "crews" : {
+      "TMD" : true
+    },
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/Vans-the-Omega-217572768301231/",
+      "instagram" : "https://www.instagram.com/vanstheomega/",
+      "main" : "http://vanstheomega.tumblr.com/",
+      "twitter" : "https://twitter.com/vanstheomega"
+    }
+  },
+  "Vexta" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/vexta/",
+      "instagram" : "https://www.instagram.com/vexta/",
+      "main" : "http://vexta.com.au/",
+      "twitter" : "https://twitter.com/vexta"
+    }
+  },
+  "Wayne Youle" : {
+    "crews" : false,
+    "desc" : false,
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : "http://suite.co.nz/artists/wayne-youle/",
+      "twitter" : false
+    }
+  },
+  "Wongi \"Freak\" Wilson" : {
+    "crews" : {
+      "DTR" : true
+    },
+    "desc" : false,
+    "links" : {
+      "facebook" : "https://www.facebook.com/Wongi-Freak-DTR-358455897602623/",
+      "instagram" : false,
+      "main" : "http://www.wongi.co.nz/",
+      "twitter" : false
+    }
+  }
+}

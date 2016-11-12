@@ -1,0 +1,145 @@
+{
+  "AWOL" : {
+    "links" : {
+      "facebook" : "https://www.facebook.com/awolcrew/",
+      "instagram" : false,
+      "main" : "http://www.awolcrew.com/",
+      "twitter" : false
+    },
+    "members" : {
+      "Adnate" : true
+    }
+  },
+  "BMD" : {
+    "links" : {
+      "facebook" : false,
+      "instagram" : "https://www.instagram.com/bmdisyourfriend/",
+      "main" : "http://bmdisyourfriend.com/",
+      "twitter" : false
+    },
+    "members" : {
+      "Andrew J Steel" : true,
+      "Dside" : true
+    }
+  },
+  "CBS" : {
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : false,
+      "twitter" : false
+    },
+    "members" : {
+      "Dcypher" : true
+    }
+  },
+  "DTK" : {
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : false,
+      "twitter" : false
+    },
+    "members" : {
+      "Ezra One" : true
+    }
+  },
+  "DTR" : {
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : false,
+      "twitter" : false
+    },
+    "members" : {
+      "Dcypher" : true,
+      "Ikarus" : true,
+      "Jacob Yikes" : true,
+      "Wongi \"Freak\" Wilson" : true
+    }
+  },
+  "DTS" : {
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : false,
+      "twitter" : false
+    },
+    "members" : {
+      "Sofles" : true
+    }
+  },
+  "FAT" : {
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : false,
+      "twitter" : false
+    },
+    "members" : {
+      "Jacob Yikes" : true,
+      "Wongi \"Freak\" Wilson" : true
+    }
+  },
+  "GBAK" : {
+    "links" : {
+      "facebook" : "https://www.facebook.com/GBAK-CREW-259551327476733/",
+      "instagram" : false,
+      "main" : false,
+      "twitter" : false
+    },
+    "members" : {
+      "Berst" : true
+    }
+  },
+  "Order 55" : {
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : false,
+      "twitter" : false
+    },
+    "members" : {
+      "Seb Humphreys" : true
+    }
+  },
+  "RFC" : {
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : false,
+      "twitter" : false
+    },
+    "members" : {
+      "Elliot Francis Stewart" : true
+    }
+  },
+  "Stick Up Girls" : {
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : false,
+      "twitter" : false
+    },
+    "members" : false
+  },
+  "TMD" : {
+    "links" : {
+      "facebook" : false,
+      "instagram" : false,
+      "main" : "http://www.tmdcrew.com/",
+      "twitter" : false
+    },
+    "members" : {
+      "Askew One" : true,
+      "Benjamin Work" : true,
+      "Berst" : true,
+      "Elliot Francis Stewart" : true,
+      "Gary Silipa" : true,
+      "Mark Henare" : true,
+      "Phat1" : true,
+      "Sofles" : true,
+      "Vans the Omega" : true
+    }
+  }
+}
